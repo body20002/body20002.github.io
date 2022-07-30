@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Poppins:wght@400;700;900&family=Syne+Mono&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header {
+    @apply relative px-1 font-syneMono;
+  }
+
+  .header > span {
+    @apply absolute left-0 -z-10 h-full w-full animate-toFullWidth bg-primary transition-[width] dark:bg-primaryDark;
+  }
+
+  .wevylink {
+    @apply underline decoration-secondary decoration-wavy hover:bg-secondary dark:decoration-secondaryDark dark:hover:bg-secondaryDark dark:hover:text-black;
+  }
+}
+
+@layer base {
+  section {
+    @apply flex w-full flex-col items-start justify-center gap-y-2;
+  }
+
+  p {
+    @apply font-inconsolata font-normal;
+  }
+}
