@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" />
+    <title>Abdallah Gamal</title>
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+  <body class="bg-neutral-200 text-black dark:bg-neutral-900 dark:text-white">
+    <main
+      class="m-auto flex min-h-screen max-w-md flex-col items-center justify-center gap-y-4 px-2 sm:max-w-2xl lg:max-w-7xl lg:flex-row"
+    >
+      <section>
+        <h1 class="header text-4xl"><span></span>whoami</h1>
+        <div class="px-4">
+          <p>
+            CS Student at Modern Academy with GPA 3.55 (Still attending),
+            Interested in linux, python, web technologies and other software
+            related topics.
+          </p>
+          <span class="w-full"> - </span>
+          <p>
+            I Use Arch BTW, check out my
+            <a class="wevylink" href="https://github.com/body20002/dotfiles"
+              >dotfiles</a
+            >
+            :)
+          </p>
+          <div class="mt-2 font-bold">
+            Find Me On:
+            <div class="pl-2">
+              <p>
+                - GitHub:
+                <a class="wevylink" href="https://github.com/body20002"
+                  >@body20002</a
+                >
+              </p>
+              <p>
+                - LinkedIn:
+                <a
+                  class="wevylink"
+                  href="https://www.linkedin.com/in/abdallah-gamal-4040611b6/"
+                  >@Abdallah Gamal</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="flex flex-col gap-y-4">
+        <section>
+          <h1 class="header text-3xl"><span></span>Technologies & Tools</h1>
+          <div class="px-4">
+            <p>
+              I mainly use python, but I can work with javascript, typescript,
+              java, kotlin and c/c++.
+            </p>
+            <span class="w-full"> - </span>
+            <p>I know Django, FastAPI, Numpy, Pandas, React and NextJs.</p>
+            <p>
+              I&apos;ve tried android development using kotlin and game
+              development using pygame and unity.
+            </p>
+          </div>
+        </section>
+        <section>
+          <h1 class="header text-3xl"><span></span>Things I Like</h1>
+          <div class="px-4">
+            <p>
+              linux, python, typescript, tailwindcss, FastAPI, FOSS, clean code
+              and rock music
+              <img
+                class="inline"
+                src="https://twemoji.maxcdn.com/v/latest/svg/1f91f.svg"
+                alt="rock"
+                width="15"
+                height="15"
+              />.
+            </p>
+          </div>
+        </section>
+        <section>
+          <h1 class="header text-3xl"><span></span>Things I Want To Explore</h1>
+          <div class="px-4">
+            <p>
+              meta-programming, web assembly, javascript in backend, rust, go,
+              ML, AI, blockchain & smart contracts.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
